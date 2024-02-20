@@ -1,0 +1,46 @@
+.StudentDashboard {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.StudentDashboard-Navbar {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.StudentDashboard-Navbar button {
+    width: 100px;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.StudentDashboard-Navbar button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+}
+
+.StudentDashboard-Main {
+    width: 100%;
+    height: 90vh;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+.StudentDashboard-SearchBar {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

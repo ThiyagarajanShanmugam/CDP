@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  library_management_auth_backend:
+    build: './containerAuth'
+    ports:
+      - 3000:3000
+  library_management_student_backend:
+    build: './containerStudent'
+    ports:
+      - 3001:3001
+  library_management_admin_backend:
+    build: './containerAdmin'
+    ports:
+      - 3002:3002
+  library_management_auth_frontend:
+    build: './containerAuthFrontend'
+    ports:
+      - 5000:5000
+    depends_on:
+      - library_management_auth_backend
+  library_management_student_frontend:
+    build: './containerStudentFrontend'
+    ports:
+      - 5001:5001
+    depends_on:
+      - library_management_student_backend
+  library_management_admin_frontend:
+    build: './containerAdminFrontend'
+    ports:
+      - 5002:5002
+    depends_on:
+      - library_management_admin_backend

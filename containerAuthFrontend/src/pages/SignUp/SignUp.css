@@ -1,0 +1,88 @@
+.Register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.Register nav {
+    padding: 20px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.Register nav ul { 
+    width: 100%;
+    height: 100%;
+}
+
+.Register nav ul a {
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid black;
+    color: black;
+    text-decoration: none;
+}
+
+.Register-Main-Container {
+    height: calc(100vh - 40px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Register-Main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 700px;
+    border: 2px solid black;
+    padding: 50px;
+}
+
+.Register-Main input { 
+    width: 300px;
+    height: 50px;
+    padding-left: 20px;
+    border-radius: 20px;    
+}
+
+.Register-Main-Input {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Register-Main-Input select {
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.Register-Main p { 
+    font-size: 20px;
+}
+
+.Register-Main p a {
+    color: green;
+}
+
+.Register-Button {
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+}
